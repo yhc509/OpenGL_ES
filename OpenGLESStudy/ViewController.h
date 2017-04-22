@@ -6,10 +6,13 @@
 //  Copyright © 2017년 장윤형. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : GLKViewController
+{
+}
 
+@property (strong, nonatomic) GLKBaseEffect *baseEffect;
 
 @end
 

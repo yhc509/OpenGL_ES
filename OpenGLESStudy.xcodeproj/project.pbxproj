@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0008D2971EAAE0E0001664ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008D2961EAAE0E0001664ED /* Foundation.framework */; };
+		0008D2991EAAE0E7001664ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008D2981EAAE0E7001664ED /* UIKit.framework */; };
+		0008D29B1EAAE0ED001664ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008D29A1EAAE0ED001664ED /* CoreGraphics.framework */; };
+		0008D29D1EAAE0F3001664ED /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008D29C1EAAE0F3001664ED /* QuartzCore.framework */; };
+		0008D29F1EAAE0F9001664ED /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008D29E1EAAE0F9001664ED /* OpenGLES.framework */; };
+		0008D2AA1EAAE797001664ED /* BaseScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0008D2A81EAAE797001664ED /* BaseScene.mm */; };
+		0008D2AD1EAAE7E4001664ED /* FirstScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0008D2AB1EAAE7E4001664ED /* FirstScene.mm */; };
+		0008D2BA1EAAEFF6001664ED /* Timer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0008D2B81EAAEFF6001664ED /* Timer.mm */; };
+		00819DED1EAB1C2F001EC3B4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00819DEC1EAB1C2F001EC3B4 /* GLKit.framework */; };
+		00819DF11EAB2748001EC3B4 /* Triangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DEF1EAB2748001EC3B4 /* Triangle.mm */; };
+		00819DF41EAB275F001EC3B4 /* BaseObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DF21EAB275F001EC3B4 /* BaseObject.mm */; };
+		00819DF71EAB2F9F001EC3B4 /* SceneManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */; };
 		00FEDA0F1EAADFD900D9BDA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA0E1EAADFD900D9BDA4 /* main.m */; };
 		00FEDA121EAADFD900D9BDA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA111EAADFD900D9BDA4 /* AppDelegate.m */; };
-		00FEDA151EAADFD900D9BDA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA141EAADFD900D9BDA4 /* ViewController.m */; };
+		00FEDA151EAADFD900D9BDA4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA141EAADFD900D9BDA4 /* ViewController.mm */; };
 		00FEDA181EAADFD900D9BDA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FEDA161EAADFD900D9BDA4 /* Main.storyboard */; };
 		00FEDA1A1EAADFD900D9BDA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FEDA191EAADFD900D9BDA4 /* Assets.xcassets */; };
 		00FEDA1D1EAADFD900D9BDA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FEDA1B1EAADFD900D9BDA4 /* LaunchScreen.storyboard */; };
@@ -35,12 +47,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0008D2961EAAE0E0001664ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0008D2981EAAE0E7001664ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0008D29A1EAAE0ED001664ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0008D29C1EAAE0F3001664ED /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0008D29E1EAAE0F9001664ED /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0008D2A81EAAE797001664ED /* BaseScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BaseScene.mm; path = Framework/Scene/BaseScene.mm; sourceTree = "<group>"; };
+		0008D2A91EAAE797001664ED /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseScene.h; path = Framework/Scene/BaseScene.h; sourceTree = "<group>"; };
+		0008D2AB1EAAE7E4001664ED /* FirstScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FirstScene.mm; path = Framework/Scene/FirstScene.mm; sourceTree = "<group>"; };
+		0008D2AC1EAAE7E4001664ED /* FirstScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstScene.h; path = Framework/Scene/FirstScene.h; sourceTree = "<group>"; };
+		0008D2B81EAAEFF6001664ED /* Timer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Timer.mm; path = Framework/Timer.mm; sourceTree = "<group>"; };
+		0008D2B91EAAEFF6001664ED /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = Framework/Timer.h; sourceTree = "<group>"; };
+		00819DEC1EAB1C2F001EC3B4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		00819DEF1EAB2748001EC3B4 /* Triangle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Triangle.mm; path = Framework/Object/Triangle.mm; sourceTree = "<group>"; };
+		00819DF01EAB2748001EC3B4 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Triangle.h; path = Framework/Object/Triangle.h; sourceTree = "<group>"; };
+		00819DF21EAB275F001EC3B4 /* BaseObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BaseObject.mm; path = Framework/Object/BaseObject.mm; sourceTree = "<group>"; };
+		00819DF31EAB275F001EC3B4 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseObject.h; path = Framework/Object/BaseObject.h; sourceTree = "<group>"; };
+		00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SceneManager.mm; path = Framework/SceneManager.mm; sourceTree = "<group>"; };
+		00819DF61EAB2F9F001EC3B4 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = Framework/SceneManager.h; sourceTree = "<group>"; };
 		00FEDA0A1EAADFD900D9BDA4 /* OpenGLESStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FEDA0E1EAADFD900D9BDA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FEDA101EAADFD900D9BDA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FEDA111EAADFD900D9BDA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00FEDA131EAADFD900D9BDA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		00FEDA141EAADFD900D9BDA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		00FEDA141EAADFD900D9BDA4 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		00FEDA171EAADFD900D9BDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00FEDA191EAADFD900D9BDA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00FEDA1C1EAADFD900D9BDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +88,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00819DED1EAB1C2F001EC3B4 /* GLKit.framework in Frameworks */,
+				0008D29F1EAAE0F9001664ED /* OpenGLES.framework in Frameworks */,
+				0008D29D1EAAE0F3001664ED /* QuartzCore.framework in Frameworks */,
+				0008D29B1EAAE0ED001664ED /* CoreGraphics.framework in Frameworks */,
+				0008D2991EAAE0E7001664ED /* UIKit.framework in Frameworks */,
+				0008D2971EAAE0E0001664ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +114,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0008D2951EAAE0E0001664ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00819DEC1EAB1C2F001EC3B4 /* GLKit.framework */,
+				0008D29E1EAAE0F9001664ED /* OpenGLES.framework */,
+				0008D29C1EAAE0F3001664ED /* QuartzCore.framework */,
+				0008D29A1EAAE0ED001664ED /* CoreGraphics.framework */,
+				0008D2981EAAE0E7001664ED /* UIKit.framework */,
+				0008D2961EAAE0E0001664ED /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0008D2A01EAAE37D001664ED /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				00819DEE1EAB2720001EC3B4 /* Object */,
+				0008D2A71EAAE781001664ED /* Scene */,
+				0008D2B81EAAEFF6001664ED /* Timer.mm */,
+				0008D2B91EAAEFF6001664ED /* Timer.h */,
+				00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */,
+				00819DF61EAB2F9F001EC3B4 /* SceneManager.h */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		0008D2A71EAAE781001664ED /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0008D2A81EAAE797001664ED /* BaseScene.mm */,
+				0008D2A91EAAE797001664ED /* BaseScene.h */,
+				0008D2AB1EAAE7E4001664ED /* FirstScene.mm */,
+				0008D2AC1EAAE7E4001664ED /* FirstScene.h */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		00819DEE1EAB2720001EC3B4 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				00819DEF1EAB2748001EC3B4 /* Triangle.mm */,
+				00819DF01EAB2748001EC3B4 /* Triangle.h */,
+				00819DF21EAB275F001EC3B4 /* BaseObject.mm */,
+				00819DF31EAB275F001EC3B4 /* BaseObject.h */,
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
 		00FEDA011EAADFD900D9BDA4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +169,7 @@
 				00FEDA261EAADFDA00D9BDA4 /* OpenGLESStudyTests */,
 				00FEDA311EAADFDA00D9BDA4 /* OpenGLESStudyUITests */,
 				00FEDA0B1EAADFD900D9BDA4 /* Products */,
+				0008D2951EAAE0E0001664ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +186,11 @@
 		00FEDA0C1EAADFD900D9BDA4 /* OpenGLESStudy */ = {
 			isa = PBXGroup;
 			children = (
+				0008D2A01EAAE37D001664ED /* Framework */,
 				00FEDA101EAADFD900D9BDA4 /* AppDelegate.h */,
 				00FEDA111EAADFD900D9BDA4 /* AppDelegate.m */,
 				00FEDA131EAADFD900D9BDA4 /* ViewController.h */,
-				00FEDA141EAADFD900D9BDA4 /* ViewController.m */,
+				00FEDA141EAADFD900D9BDA4 /* ViewController.mm */,
 				00FEDA161EAADFD900D9BDA4 /* Main.storyboard */,
 				00FEDA191EAADFD900D9BDA4 /* Assets.xcassets */,
 				00FEDA1B1EAADFD900D9BDA4 /* LaunchScreen.storyboard */,
@@ -273,9 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FEDA151EAADFD900D9BDA4 /* ViewController.m in Sources */,
+				00FEDA151EAADFD900D9BDA4 /* ViewController.mm in Sources */,
+				00819DF41EAB275F001EC3B4 /* BaseObject.mm in Sources */,
 				00FEDA121EAADFD900D9BDA4 /* AppDelegate.m in Sources */,
 				00FEDA0F1EAADFD900D9BDA4 /* main.m in Sources */,
+				00819DF11EAB2748001EC3B4 /* Triangle.mm in Sources */,
+				00819DF71EAB2F9F001EC3B4 /* SceneManager.mm in Sources */,
+				0008D2AD1EAAE7E4001664ED /* FirstScene.mm in Sources */,
+				0008D2BA1EAAEFF6001664ED /* Timer.mm in Sources */,
+				0008D2AA1EAAE797001664ED /* BaseScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +518,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					Framework/Scene/,
+					Framework/,
+				);
 				INFOPLIST_FILE = OpenGLESStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.com2us.openglesstudy.OpenGLESStudy;
@@ -437,6 +535,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					Framework/Scene/,
+					Framework/,
+				);
 				INFOPLIST_FILE = OpenGLESStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.com2us.openglesstudy.OpenGLESStudy;
@@ -509,6 +613,7 @@
 				00FEDA391EAADFDA00D9BDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00FEDA3A1EAADFDA00D9BDA4 /* Build configuration list for PBXNativeTarget "OpenGLESStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +622,7 @@
 				00FEDA3C1EAADFDA00D9BDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00FEDA3D1EAADFDA00D9BDA4 /* Build configuration list for PBXNativeTarget "OpenGLESStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +631,7 @@
 				00FEDA3F1EAADFDA00D9BDA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
