@@ -10,17 +10,19 @@
 #define Triangle_hpp
 
 #include "BaseObject.h"
+
+class VertexArray;
+
 class TriangleObject : public BaseObject {
 public:
     TriangleObject();
     ~TriangleObject();
     
-    void Init();
     void Draw();
     void Update();
-    void Destroy();
     
 private:
+    VertexArray* mVertexArray;
     
 };
 

@@ -15,10 +15,8 @@ public:
     BaseObject();
     virtual ~BaseObject();
     
-    virtual void Init();
     virtual void Draw();
     virtual void Update();
-    virtual void Destroy();
     
 private:
     

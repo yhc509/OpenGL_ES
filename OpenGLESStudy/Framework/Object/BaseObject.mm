@@ -16,19 +16,11 @@ BaseObject::~BaseObject(){
     
 }
 
-void BaseObject::Init(){
-    
-}
-
 void BaseObject::Draw(){
     
 }
 
 void BaseObject::Update(){
-    
-}
-
-void BaseObject::Destroy(){
     
 }
 

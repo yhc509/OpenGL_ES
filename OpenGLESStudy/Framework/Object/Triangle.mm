@@ -7,51 +7,42 @@
 //
 
 #include "Triangle.h"
-#import <GLKit/GLKit.h>
+#include "VertexArray.h"
 
-GLuint vertexBufferID;
 typedef struct {
     GLKVector3  positionCoords;
+    GLKVector2 textureCoords;
+    GLKVector3  color;
 }
 SceneVertex;
 
 const SceneVertex vertices[] =
 {
-    {{-0.5f, -0.5f, 0.0}},
-    {{ 0.5f, -0.5f, 0.0}},
-    {{-0.5f,  0.5f, 0.0}}
+    {{-0.5f, -0.5f, 0.0}, {0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
+    {{ 0.5f, -0.5f, 0.0}, {1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
+    {{-0.5f,  0.5f, 0.0}, {0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}}
 };
 
 
 TriangleObject::TriangleObject()
+: mVertexArray(new VertexArray(vertices, sizeof(SceneVertex), sizeof(vertices) / sizeof(SceneVertex), GL_STATIC_DRAW))
 {
-    Init();
+    
 }
 
 TriangleObject::~TriangleObject(){
-    
-}
-
-void TriangleObject::Init(){
-    
-    glGenBuffers(1, &vertexBufferID);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    
+    if(mVertexArray != nullptr) delete mVertexArray;
 }
 
 void TriangleObject::Draw(){
-    glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(SceneVertex), NULL);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    mVertexArray->PrepareToDraw(GLKVertexAttribPosition, 3, offsetof(SceneVertex, positionCoords), YES);
+    mVertexArray->PrepareToDraw(GLKVertexAttribTexCoord0, 2, offsetof(SceneVertex, textureCoords), YES);
+    mVertexArray->PrepareToDraw(GLKVertexAttribColor, 3, offsetof(SceneVertex, color), YES);
+    
+    mVertexArray->Draw(GL_TRIANGLES, 0, 3);
 }
 
 void TriangleObject::Update(){
     
 }
-
-void TriangleObject::Destroy(){
-    
-}
-
 

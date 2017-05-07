@@ -19,6 +19,8 @@
 		00819DF11EAB2748001EC3B4 /* Triangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DEF1EAB2748001EC3B4 /* Triangle.mm */; };
 		00819DF41EAB275F001EC3B4 /* BaseObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DF21EAB275F001EC3B4 /* BaseObject.mm */; };
 		00819DF71EAB2F9F001EC3B4 /* SceneManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */; };
+		00F8BFFE1EBF17EA00A267B1 /* VertexArray.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00F8BFFC1EBF17EA00A267B1 /* VertexArray.mm */; };
+		00F8C0001EBF223600A267B1 /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00F8BFFF1EBF223600A267B1 /* leaves.gif */; };
 		00FEDA0F1EAADFD900D9BDA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA0E1EAADFD900D9BDA4 /* main.m */; };
 		00FEDA121EAADFD900D9BDA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA111EAADFD900D9BDA4 /* AppDelegate.m */; };
 		00FEDA151EAADFD900D9BDA4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00FEDA141EAADFD900D9BDA4 /* ViewController.mm */; };
@@ -65,6 +67,9 @@
 		00819DF31EAB275F001EC3B4 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseObject.h; path = Framework/Object/BaseObject.h; sourceTree = "<group>"; };
 		00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SceneManager.mm; path = Framework/SceneManager.mm; sourceTree = "<group>"; };
 		00819DF61EAB2F9F001EC3B4 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = Framework/SceneManager.h; sourceTree = "<group>"; };
+		00F8BFFC1EBF17EA00A267B1 /* VertexArray.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VertexArray.mm; path = Framework/VertexArray.mm; sourceTree = "<group>"; };
+		00F8BFFD1EBF17EA00A267B1 /* VertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VertexArray.h; path = Framework/VertexArray.h; sourceTree = "<group>"; };
+		00F8BFFF1EBF223600A267B1 /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = leaves.gif; path = "../../../Desktop/openGL ES/ch03_EXAMPLES/OpenGLES_Ch3_1/OpenGLES_Ch3_1/leaves.gif"; sourceTree = "<group>"; };
 		00FEDA0A1EAADFD900D9BDA4 /* OpenGLESStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FEDA0E1EAADFD900D9BDA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FEDA101EAADFD900D9BDA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +141,8 @@
 				0008D2B91EAAEFF6001664ED /* Timer.h */,
 				00819DF51EAB2F9F001EC3B4 /* SceneManager.mm */,
 				00819DF61EAB2F9F001EC3B4 /* SceneManager.h */,
+				00F8BFFC1EBF17EA00A267B1 /* VertexArray.mm */,
+				00F8BFFD1EBF17EA00A267B1 /* VertexArray.h */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 		00FEDA0D1EAADFD900D9BDA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00F8BFFF1EBF223600A267B1 /* leaves.gif */,
 				00FEDA0E1EAADFD900D9BDA4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -334,6 +342,7 @@
 			files = (
 				00FEDA1D1EAADFD900D9BDA4 /* LaunchScreen.storyboard in Resources */,
 				00FEDA1A1EAADFD900D9BDA4 /* Assets.xcassets in Resources */,
+				00F8C0001EBF223600A267B1 /* leaves.gif in Resources */,
 				00FEDA181EAADFD900D9BDA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +371,7 @@
 				00FEDA151EAADFD900D9BDA4 /* ViewController.mm in Sources */,
 				00819DF41EAB275F001EC3B4 /* BaseObject.mm in Sources */,
 				00FEDA121EAADFD900D9BDA4 /* AppDelegate.m in Sources */,
+				00F8BFFE1EBF17EA00A267B1 /* VertexArray.mm in Sources */,
 				00FEDA0F1EAADFD900D9BDA4 /* main.m in Sources */,
 				00819DF11EAB2748001EC3B4 /* Triangle.mm in Sources */,
 				00819DF71EAB2F9F001EC3B4 /* SceneManager.mm in Sources */,
