@@ -12,6 +12,7 @@
 #include "BaseObject.h"
 
 class VertexArray;
+class Material;
 
 class TriangleObject : public BaseObject {
 public:
@@ -23,7 +24,7 @@ public:
     
 private:
     VertexArray* mVertexArray;
-    
+    Material* mMaterial;
 };
 
 

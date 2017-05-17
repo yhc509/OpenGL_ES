@@ -16,12 +16,3 @@ BaseObject::~BaseObject(){
     
 }
 
-void BaseObject::Draw(){
-    
-}
-
-void BaseObject::Update(){
-    
-}
-
-

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#include "SceneManager.h"
+#import "SceneManager.h"
 
 @implementation ViewController
 
@@ -27,31 +27,15 @@
     
     [EAGLContext setCurrentContext:view.context];
     
-    // Create Shader
-    self.baseEffect = [[GLKBaseEffect alloc] init];
-    self.baseEffect.useConstantColor = GL_TRUE;
-    self.baseEffect.constantColor = GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f);
-    
-    CGImageRef imageRef =
-    [[UIImage imageNamed:@"leaves.gif"] CGImage];
-    
-    GLKTextureInfo *textureInfo = [GLKTextureLoader
-                                   textureWithCGImage:imageRef
-                                   options:nil
-                                   error:NULL];
-    
-    self.baseEffect.texture2d0.name = textureInfo.name;
-    self.baseEffect.texture2d0.target = (GLKTextureTarget) textureInfo.target;
-    
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     
     // Initialize Scene
     SceneManager::GetInstance()->Init();
 }
 
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+- (void)glkView:(GLKView *)view
+     drawInRect:(CGRect)rect
 {
-    [self.baseEffect prepareToDraw];
     glClear(GL_COLOR_BUFFER_BIT);
     
     SceneManager::GetInstance()->Manage();

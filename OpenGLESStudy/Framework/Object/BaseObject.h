@@ -9,20 +9,15 @@
 #ifndef BaseObject_hpp
 #define BaseObject_hpp
 
+#include <string>
 
 class BaseObject {
 public:
     BaseObject();
     virtual ~BaseObject();
     
-    virtual void Draw();
-    virtual void Update();
-    
-private:
-    
-    
-    
-    
+    virtual void Draw() = 0;
+    virtual void Update() = 0;
 };
 
 

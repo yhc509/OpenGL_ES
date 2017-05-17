@@ -8,34 +8,41 @@
 
 #include "Triangle.h"
 #include "VertexArray.h"
+#include "Material.h"
 
 typedef struct {
-    GLKVector3  positionCoords;
+    GLKVector3 positionCoords;
+    GLKVector3 normalVector;
     GLKVector2 textureCoords;
-    GLKVector3  color;
+    GLKVector3 color;
 }
 SceneVertex;
 
 const SceneVertex vertices[] =
 {
-    {{-0.5f, -0.5f, 0.0}, {0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
-    {{ 0.5f, -0.5f, 0.0}, {1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
-    {{-0.5f,  0.5f, 0.0}, {0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}}
+    {{-0.5f, -0.5f, 0.0}, {0.0f, 0.0f, -1.0f}, {0.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
+    {{ 0.5f, -0.5f, 0.0}, {0.0f, 0.0f, -1.0f}, {1.0f, 0.0f}, {1.0f, 1.0f, 1.0f}},
+    {{-0.5f,  0.5f, 0.0}, {0.0f, 0.0f, -1.0f}, {0.0f, 1.0f}, {1.0f, 1.0f, 1.0f}}
 };
 
 
 TriangleObject::TriangleObject()
-: mVertexArray(new VertexArray(vertices, sizeof(SceneVertex), sizeof(vertices) / sizeof(SceneVertex), GL_STATIC_DRAW))
+: mVertexArray(new VertexArray(vertices, sizeof(SceneVertex), sizeof(vertices) / sizeof(SceneVertex), GL_STATIC_DRAW)),
+mMaterial(new Material())
 {
-    
+    mMaterial->SetTexture("leaves.gif");
 }
+
 
 TriangleObject::~TriangleObject(){
     if(mVertexArray != nullptr) delete mVertexArray;
 }
 
 void TriangleObject::Draw(){
+    [mMaterial->GetBaseEffect() prepareToDraw];
+    
     mVertexArray->PrepareToDraw(GLKVertexAttribPosition, 3, offsetof(SceneVertex, positionCoords), YES);
+    mVertexArray->PrepareToDraw(GLKVertexAttribNormal, 3, offsetof(SceneVertex, normalVector), YES);
     mVertexArray->PrepareToDraw(GLKVertexAttribTexCoord0, 2, offsetof(SceneVertex, textureCoords), YES);
     mVertexArray->PrepareToDraw(GLKVertexAttribColor, 3, offsetof(SceneVertex, color), YES);
     
@@ -45,4 +52,6 @@ void TriangleObject::Draw(){
 void TriangleObject::Update(){
     
 }
+
+
 
