@@ -35,7 +35,7 @@ void SceneManager::Init(){
     mNextScene = mCurScene;
 }
 
-void SceneManager::Manage(){
+void SceneManager::Manage(GLKMatrix4 proj){
     Timer::GetInstance()->GetTick();
     float delta = Timer::GetInstance()->GetDeltaTime();
     
@@ -51,7 +51,7 @@ void SceneManager::Manage(){
         }
         else {
             // Draw
-            mCurScene->Draw();
+            mCurScene->Draw(proj);
         }
     }
     

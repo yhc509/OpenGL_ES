@@ -9,6 +9,7 @@
 #ifndef SceneManager_hpp
 #define SceneManager_hpp
 
+#include <GLKit/GLKit.h>
 class BaseScene;
 
 class SceneManager {
@@ -18,7 +19,7 @@ public:
     
 public:
     void Init();
-    void Manage();
+    void Manage(GLKMatrix4 proj);
     void Destroy();
     
     void LoadScene(BaseScene* pScene);

@@ -17,7 +17,7 @@ public:
     ~FirstScene();
     
     void Init();
-    void Draw();
+    void Draw(GLKMatrix4 proj);
     void Update();
     
 private:

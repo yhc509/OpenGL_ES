@@ -38,8 +38,9 @@ TriangleObject::~TriangleObject(){
     if(mVertexArray != nullptr) delete mVertexArray;
 }
 
-void TriangleObject::Draw(){
+void TriangleObject::Draw(GLKMatrix4 proj){
     [mMaterial->GetBaseEffect() prepareToDraw];
+    mMaterial->GetBaseEffect().transform.projectionMatrix = proj;
     
     mVertexArray->PrepareToDraw(GLKVertexAttribPosition, 3, offsetof(SceneVertex, positionCoords), YES);
     mVertexArray->PrepareToDraw(GLKVertexAttribNormal, 3, offsetof(SceneVertex, normalVector), YES);

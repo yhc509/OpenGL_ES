@@ -23,8 +23,8 @@ void FirstScene::Init(){
     mObjects->push_back(new TriangleObject());
 }
 
-void FirstScene::Draw(){
-    BaseScene::Draw();
+void FirstScene::Draw(GLKMatrix4 proj){
+    BaseScene::Draw(proj);
 }
 
 void FirstScene::Update(){

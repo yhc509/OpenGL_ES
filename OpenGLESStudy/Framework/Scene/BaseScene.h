@@ -9,6 +9,7 @@
 #ifndef BaseScene_hpp
 #define BaseScene_hpp
 
+#include <GLKit/GLKit.h>
 #include <vector>
 
 class BaseObject;
@@ -18,7 +19,7 @@ public:
     BaseScene();
     virtual ~BaseScene();
     virtual void Init();
-    virtual void Draw();
+    virtual void Draw(GLKMatrix4 proj);
     virtual void Update();
 
 protected:

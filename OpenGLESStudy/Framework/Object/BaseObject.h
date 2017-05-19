@@ -10,13 +10,14 @@
 #define BaseObject_hpp
 
 #include <string>
+#include <GLKit/GLKit.h>
 
 class BaseObject {
 public:
     BaseObject();
     virtual ~BaseObject();
     
-    virtual void Draw() = 0;
+    virtual void Draw(GLKMatrix4 proj) = 0;
     virtual void Update() = 0;
 };
 

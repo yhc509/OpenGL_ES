@@ -27,9 +27,9 @@ BaseScene::~BaseScene(){
 void BaseScene::Init(){
 }
 
-void BaseScene::Draw(){
+void BaseScene::Draw(GLKMatrix4 proj){
     for(auto obj : *mObjects) {
-        obj->Draw();
+        obj->Draw(proj);
     }
 }
 

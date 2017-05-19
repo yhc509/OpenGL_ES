@@ -12,7 +12,5 @@
 {
 }
 
-@property (strong, nonatomic) GLKBaseEffect *baseEffect;
-
 @end
 
